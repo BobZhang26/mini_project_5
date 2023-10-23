@@ -9,7 +9,7 @@ import csv
 def load(dataset="../data/rainfall.csv"):
     # print the full working directory
     # print(os.getcwd())
-    payload = csv.reader(open(dataset, newline=""), delimiter=",")
+    payload = csv.reader(open(dataset, newline="",encoding='utf-8'), delimiter=",")
     conn = sqlite3.connect("rainfall.db")
     c = conn.cursor()
     # create new table for the database rainfall
