@@ -3,7 +3,7 @@ Transforms and loads data to local SQlite3 database
 """
 import sqlite3
 import csv
-import os
+# import os
 
 
 def load(dataset="../data/rainfall.csv"):
